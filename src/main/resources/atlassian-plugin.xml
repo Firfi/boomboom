@@ -1,0 +1,15 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+    </plugin-info>
+    <webwork1 key="AccountTasksAction" name="AccountTasksAction">
+        <actions>
+            <action name="ru.megaplan.jira.plugin.boomboom.action.AccountTasksAction"
+                    alias="AccountTasksAction">
+                <view name="success">/accountTasksAction.vm</view>
+            </action>
+        </actions>
+    </webwork1>
+</atlassian-plugin>

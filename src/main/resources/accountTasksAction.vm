@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Account tickets</title>
+        <meta name="decorator" content="popup" />
+    </head>
+    <body>
+        <table class="aui">
+            <tbody>
+                #foreach ($res in $results)
+                <tr>
+                    <td>
+                        <a href="$baseurl/browse/$res.get("pkey").get()" target="_blank">$res.get("pkey").get()</a>
+                    </td>
+                    <td>
+                        $res.get("summary").get()
+                    </td>
+                    <td>
+                        $res.get("assigneeName").get()
+                    </td>
+                    <td>
+                        $res.get("createdString").get()
+                    </td>
+                    <td>
+                        $res.get("status").get()
+                    </td>
+                </tr>
+                #end
+            </tbody>
+        </table>
+    </body>
+</html>
+
+
+
